@@ -35,7 +35,6 @@ body, section {
 .main-nav:hover > .main-nav__link:hover {
   color: black;
 }
-
 /* underline animation test */
 .sliding-underline {
   position: relative;
@@ -68,15 +67,18 @@ body, section {
 }
 
 /* active menu item */
+.sliding-underline--active:after {
+  width: 100%;
+  background: transparent;
+}
 .sliding-underline--active:before,
-.sliding-underline--active:after,
 .main-nav:hover > .sliding-underline--active:hover:before,
 .main-nav:hover > .sliding-underline--active:hover:after {
   width: 100%;
   background: black;
-  transition: background .5s;
+  transition: all .5s;
 }
 .main-nav:hover > .sliding-underline--active:before,
 .main-nav:hover > .sliding-underline--active:after {
-  background:rgba(0, 0, 0, 0.1);
+  background:rgba(0, 0, 0, 0.2);
 }
