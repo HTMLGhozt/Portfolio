@@ -1,0 +1,82 @@
+body, section {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  min-height: 100vh
+}
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  white-space: nowrap;
+  background-color: white;
+}
+.main-nav {
+  padding: 0 30px;
+}
+.main-nav__link {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.4em;
+  text-decoration: none;
+
+  padding: 10px 0 10px .4em;
+  margin: 5px;
+  color: black;
+  transition: color .5s;
+}
+.main-nav:hover > .main-nav__link {
+  color:rgba(0, 0, 0, 0.3);
+}
+.main-nav:hover > .main-nav__link:hover {
+  color: black;
+}
+
+/* underline animation test */
+.sliding-underline {
+  position: relative;
+}
+.sliding-underline:before,
+.sliding-underline:after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  height: 1.3px;
+  width: 0;
+}
+.sliding-underline:before {
+  left: 0;
+  transition: width 0s ease, background .5s ease;
+}
+.sliding-underline:after,
+.sliding-underline:hover:before {
+  right: 0;
+  background: black;
+  transition: width .5s ease;
+}
+.sliding-underline:hover:before,
+.sliding-underline:hover:after {
+  width: 100%;
+}
+.sliding-underline:hover:after {
+  background: transparent;
+  transition: all 0s ease;
+}
+
+/* active menu item */
+.sliding-underline--active:before,
+.sliding-underline--active:after,
+.main-nav:hover > .sliding-underline--active:hover:before,
+.main-nav:hover > .sliding-underline--active:hover:after {
+  width: 100%;
+  background: black;
+  transition: background .5s;
+}
+.main-nav:hover > .sliding-underline--active:before,
+.main-nav:hover > .sliding-underline--active:after {
+  background:rgba(0, 0, 0, 0.1);
+}

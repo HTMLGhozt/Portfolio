@@ -9,49 +9,53 @@
     <title>Thomas Dillard | Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <nav>
-      <a href="#">bio</a>
-      <a href="#">my work</a>
-      <a href="#">social</a>
-      <a href="#">contact me</a>
-    </nav>
+    <div class='nav-bar'>
+      <nav class='main-nav'>
+        <a class='sliding-underline main-nav__link' href="#bio">bio</a>
+        <a class='sliding-underline main-nav__link' href="#my-work">my work</a>
+        <a class='sliding-underline main-nav__link' href="#social">social</a>
+        <a class='sliding-underline main-nav__link' href="#contact">contact</a>
+      </nav>
+    </div>
     <header>
-      <h1>Thomas Dillard</h1>
+      <h1 class='header__title'>Thomas Dillard</h1>
     </header>
-    <section>
-      <h2>Bio</h2>
+    <section id='bio' class='bio'>
+      <h2 class='bio__title'>Bio</h2>
       <!-- https://dannyhrubin.com/2016/01/04/how-to-write-professional-executive-bio/ -->
-      <p>
+      <p class='bio__paragraph'>
         I am a student of tha Lambda Academy of Computer Science.
         I have been focusing on the development of full stack applications utilizing React and Node for front-end and server-side, respectively.
         While atending Lambda I have developed and assisted in the development of several applications, the most enterprizing being an unnamed Tour Application.
         Outside of the Academy I expiriment graphic design and typography.
       </p>
-      <p>
+      <p class='bio__paragraph'>
         If you have further questions, please <a href="#">contact me</a>.
       </p>
     </section>
-    <section>
-      <h2>My Work</h2>
+    <section id='my-work' class='my-work'>
+      <h2 class='my-work__title'>My Work</h2>
       <!-- four of the most recent and clean projects, on hover the rest slide off screen. -->
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div class='my-work__project'></div>
+      <div class='my-work__project'></div>
+      <div class='my-work__project'></div>
+      <div class='my-work__project'></div>
     </section>
-    <section>
-      <h2>Social</h2>
+    <section id='social' class='social'>
+      <h2 class='social__title'>Social</h2>
     </section>
-    <section>
-      <h2>Contact Me</h2>
+    <section id='contact' class='contact'>
+      <h2 class='contact__title'>Contact Me</h2>
     </section>
     <footer>
-      <small>Thomas Dillard Studios 2017</small>
+      <small class='copyright'>Thomas Dillard Studios 2017</small>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
