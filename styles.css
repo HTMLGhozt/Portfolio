@@ -1,7 +1,8 @@
 body, section {
   margin: 0;
   padding: 0;
-  min-height: 100vh
+  min-height: 100vh;
+  counter-reset: level1;
 }
 section {
   padding-top: 30px;
@@ -19,6 +20,7 @@ section:nth-child(even) {
   align-items: center;
   white-space: nowrap;
   background-color: white;
+  z-index: 1;
 }
 .main-nav {
   padding: 0 30px;
@@ -97,11 +99,20 @@ header {
 }
 /* Code Header colors */
 .javascript {
-  padding-top: 30px;
   font-size: 2em;
   font-family: "Lucida Console", Monaco, monospace;
   color: rgb(194, 87, 105);
   line-height: 1.3em;
+  border-left: 2px solid dimgray;
+  padding-left: 0;
+  list-style-type: none;
+}
+.javascript > li:before {
+  content: counter(level1);
+  counter-increment: level1;
+  position: relative;
+  left: -40px;
+  color: dimgrey;
 }
 .symbol {
   color: rgb(131, 131, 131);
@@ -117,7 +128,7 @@ header {
   text-decoration: none;
   transition: all 1s ease;
 }
-.javascript:hover > .text {
+.javascript:hover .text {
   font-size: 1.5em;
   line-height: 1.5em;
 }
