@@ -117,7 +117,7 @@ header {
 .symbol {
   color: rgb(131, 131, 131);
 }
-.global-var {
+.global {
   color: rgb(0, 190, 190);
 }
 .declaration {
