@@ -1,8 +1,10 @@
 body, section {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   min-height: 100vh
+}
+section {
+  padding-top: 30px;
 }
 .nav-bar {
   position: fixed;
@@ -83,3 +85,49 @@ body, section {
 .main-nav:hover > .sliding-underline--active:after {
   background:rgba(0, 0, 0, 0.2);
 }
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(53, 53, 53);
+}
+/* Code Header colors */
+.javascript {
+  font-size: 2em;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: rgb(194, 87, 105);
+  line-height: 1.3em;
+}
+.symbol {
+  color: rgb(131, 131, 131);
+}
+.global-var {
+  color: rgb(0, 190, 190);
+}
+.declaration {
+  color: rgb(109, 192, 31)
+}
+.text {
+  color: #f7c252;
+  text-decoration: none;
+  transition: 1s ease;
+}
+.javascript:hover > .text {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+/* scrolling test */
+/* a[ href='#bio' ]:target ~ #bio {
+  -webkit-transform: translateY( 0px);
+  transform: translateY( 0px );
+}
+
+a[ href='#my-work' ]:target ~ #main article.panel {
+  -webkit-transform: translateY( -500px );
+  transform: translateY( -500px );
+}
+a[ href="#social" ]:target ~ #main article.panel {
+  -webkit-transform: translateY( -1000px );
+  transform: translateY( -1000px );
+} */
