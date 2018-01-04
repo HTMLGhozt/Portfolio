@@ -6,6 +6,9 @@ body, section {
 section {
   padding-top: 30px;
 }
+section:nth-child(even) {
+  background-color: dimgrey;
+}
 .nav-bar {
   position: fixed;
   top: 0;
@@ -94,6 +97,7 @@ header {
 }
 /* Code Header colors */
 .javascript {
+  padding-top: 30px;
   font-size: 2em;
   font-family: "Lucida Console", Monaco, monospace;
   color: rgb(194, 87, 105);
@@ -111,11 +115,14 @@ header {
 .text {
   color: #f7c252;
   text-decoration: none;
-  transition: 1s ease;
+  transition: all 1s ease;
 }
 .javascript:hover > .text {
   font-size: 1.5em;
   line-height: 1.5em;
+}
+.icon {
+  height: 60px;
 }
 /* scrolling test */
 /* a[ href='#bio' ]:target ~ #bio {

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]> <html class="no-js"> <![endif]-->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,33 +25,28 @@
     </div>
     <header>
       <div class="javascript">
-        <span class="global-var">const</span> <span class="declaration">myFunct</span>
-        = <span class="symbol">()</span> => <span class="symbol">{</span><br />
-        &nbsp;&nbsp;return
-        <span class='symbol'>'</span><a href="#bio" class="text">hello world</a><span class='symbol'>';</span><br />
-        <span class="symbol">};</span><br />
-        <span class="global-var">console</span><span class='symbol'>.</span><span class="declaration">log</span><span class="symbol">(</span><span class="declaration">myFunct</span><span class="symbol">());</span>
+        <span class="global-var">const</span> <span class="declaration">myFunct</span> = <span class="symbol">()</span> => <span class="symbol">{</span><br />&nbsp;&nbsp;return <span class='symbol'>'</span><a href="#bio" class="text">hello world</a><span class='symbol'>';</span><br /><span class="symbol">};</span><br /><span class="global-var">console</span><span class='symbol'>.</span><span class="declaration">log</span><span class="symbol">(</span><span class="declaration">myFunct</span><span class="symbol">());</span>
       </div>
     </header>
     <section id='bio' class='bio'>
       <h2 class='bio__title'>Bio</h2>
-      <img src="images/logos/react-1.svg" alt="React logo" width="60px" height="60px" />
-      <img src="images/logos/redux.svg" alt="Redux logo" width="60px" height="60px" />
-      <img src="images/logos/MongoDB-Logo.svg" alt="MongoDB Logo" height='60px' />
-      <img src="images/logos/Javascript.svg" alt="JavaScript Logo" height='60px' />
-      <img src="images/logos/Node.svg" alt="node logo" height='60px' />
-      <img src="images/logos/html5.svg" alt="html5 logo" height='60px' />
-      <img src="images/logos/css3.svg" alt="css3 logo" height='60px' />
-      <img src="images/logos/MySQL.svg" alt="MySQL logo" height ='60px' />
+      <img class="icon" src="images/logos/react-1.svg" alt="React logo" />
+      <img class="icon" src="images/logos/redux.svg" alt="Redux logo" />
+      <img class="icon" src="images/logos/MongoDB-Logo.svg" alt="MongoDB Logo" />
+      <img class="icon" src="images/logos/Javascript.svg" alt="JavaScript Logo" />
+      <img class="icon" src="images/logos/Node.svg" alt="node logo" />
+      <img class="icon" src="images/logos/html5.svg" alt="html5 logo" />
+      <img class="icon" src="images/logos/css3.svg" alt="css3 logo" />
+      <img class="icon" src="images/logos/MySQL.svg" alt="MySQL logo" />
       <!-- https://dannyhrubin.com/2016/01/04/how-to-write-professional-executive-bio/ -->
       <p class='bio__paragraph'>
         I am a student of tha Lambda Academy of Computer Science.
         I have been focusing on the development of full stack applications utilizing React and Node for front-end and server-side, respectively.
         While atending Lambda I have developed and assisted in the development of several applications, the most enterprizing being an unnamed Tour Application.
-        Outside of the Academy I expiriment graphic design and typography.
+        Outside of the Academy I experiment with game development and font design.
       </p>
       <p class='bio__paragraph'>
-        If you have further questions, please <a href="#">contact me</a>.
+        If you have further questions, please <a href="#contact">contact me</a>.
       </p>
     </section>
     <section id='my-work' class='my-work'>
@@ -66,12 +61,20 @@
       <h2 class='social__title'>Social</h2>
     </section>
     <section id='contact' class='contact'>
-      <h2 class='contact__title'>Contact Me</h2>
+      <h2 class='contact__title'>Contact</h2>
     </section>
     <footer>
+      <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!"
+          />
+        </a>
+      </p>
       <small class='copyright'>Thomas Dillard Studios 2017</small>
     </footer>
+    <script src="scripts/addActive.js"></script>
+    <script src="scripts/smoothScroll.js"></script>
   </body>
-  <script src="script.js"></script>
-  <script src="smoothScroll.js"></script>
 </html>
