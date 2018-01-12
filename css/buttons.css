@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid black;
+  padding: 3px 2px;
+  margin: 0 5px;
+  /* border-radius: 35px; */
+  max-height: 35px;
+  min-width: 150px;
+  transition: all .2s ease-in-out;
+}
+.button:hover {
+  transform: scale(1.05);
+}
+.icon__link {
+  text-decoration: none;
+}
+.icon {
+  height: 60px;
+}

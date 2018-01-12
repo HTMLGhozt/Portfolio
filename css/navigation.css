@@ -1,0 +1,82 @@
+.nav-bar {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+    top: 0;
+  z-index: 1;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+}
+.main-nav, .mark {
+  padding: 0 20px;
+}
+.mark > a, .main-nav__link {
+  text-decoration: none;
+  color: var(--matte-black);
+}
+.mark > a {
+  font-family: var(--font-sans-serif);
+}
+.main-nav__link {
+  font-family: Helvetica, var(--font-sans-serif), sans-serif;
+  font-size: 1.1em;
+  letter-spacing: 0.4em;
+  word-spacing: 0.2em;
+  padding: 10px 0 10px 0.4em;
+  margin: 5px;
+  transition: color .5s;
+}
+.main-nav:hover > .main-nav__link {
+  --matte-black:rgba(0, 0, 0, 0.3);
+}
+.main-nav:hover > .main-nav__link:hover {
+  color: rgb(53, 53, 53);;
+}
+
+.sliding-underline {
+  position: relative;
+}
+.sliding-underline:before,
+.sliding-underline:after {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  height: 1.3px;
+  width: 0;
+}
+.sliding-underline:before {
+  left: 0;
+  transition: width 0s ease, background .5s ease;
+}
+.sliding-underline:after,
+.sliding-underline:hover:before {
+  right: 0;
+  background: black;
+  transition: width .5s ease;
+}
+.sliding-underline:hover:before,
+.sliding-underline:hover:after {
+  width: 100%;
+}
+.sliding-underline:hover:after {
+  background: transparent;
+  transition: all 0s ease;
+}
+.sliding-underline--active:after {
+  width: 100%;
+  background: transparent;
+}
+.sliding-underline--active:before,
+.main-nav:hover > .sliding-underline--active:hover:before,
+.main-nav:hover > .sliding-underline--active:hover:after {
+  width: 100%;
+  background: black;
+  transition: all .5s;
+}
+.main-nav:hover > .sliding-underline--active:before,
+.main-nav:hover > .sliding-underline--active:after {
+  background:rgba(0, 0, 0, 0.2);
+}

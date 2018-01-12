@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]> <html class="no-js"> <![endif]-->
   <head>
     <meta charset="utf-8">
@@ -9,14 +9,14 @@
     <title>Thomas Dillard | Portfolio</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <div class='nav-bar'>
-      <h1 class="mark"><a href="#header"></a>Thomas Dillard</a></h1>
+      <h1 class="mark"><a href="#header">Thomas Dillard</a></h1>
       <nav class='main-nav'>
         <a class='sliding-underline main-nav__link' href="#bio">bio</a>
         <a class='sliding-underline main-nav__link' href="#my-work">my work</a>
@@ -27,24 +27,36 @@
     </div>
     <header id="header">
       <ol class="javascript">
-        <li><span class="global">const</span> <span class="declaration">myFunct</span> = <span class="symbol">()</span> => <span class="symbol">{</span></li>
-        <li>&nbsp;&nbsp;return <span class='symbol'>'</span><a href="#bio" class="text">hello world</a><span class='symbol'>';</span></li>
-        <li><span class="symbol">};</span></li>
-        <li><span class="global">console</span><span class='symbol'>.</span><span class="declaration">log</span><span class="symbol">(</span><span class="declaration">myFunct</span><span class="symbol">());</span></li>
+        <li><span class="javascript__global">const</span> <span class="javascript__declaration">myFunct</span> = <span class="javascript__symbol">()</span> => <span class="javascript__symbol">{</span></li>
+        <li>&nbsp;&nbsp;return <span class='javascript__symbol'>'</span><a href="#bio" class="javascript__text">hello world</a><span class='javascript__symbol'>';</span></li>
+        <li><span class="javascript__symbol">};</span></li>
+        <li><span class="javascript__global">console</span><span class='javascript__symbol'>.</span><span class="javascript__declaration">log</span><span class="javascript__symbol">(</span><span class="declaration">myFunct</span><span class="javascript__symbol">());</span></li>
       </ol>
     </header>
     <section id='bio' class='bio'>
-      <h2 class='bio__title'>Bio</h2>
       <!-- https://dannyhrubin.com/2016/01/04/how-to-write-professional-executive-bio/ -->
-      <p class='bio__paragraph'>
-        I am a student of tha Lambda Academy of Computer Science.
-        I have been focusing on the development of full stack applications utilizing React and Node for front-end and server-side, respectively.
-        While atending Lambda I have developed and assisted in the development of several applications, the most enterprizing being an unnamed Tour Application.
-        Outside of the Academy I experiment with game development and font design.
-      </p>
-      <p class='bio__paragraph'>
-        If you have further questions, please <a href="#contact">contact me</a>.
-      </p>
+      <div class="background-stripe"></div>
+      <div class='card bio__card'>
+        <h2 class='card__title'>Hello, World!</h2>
+        <p class='card__paragraph'>
+          'Hello, World!' is a programming convention often used to intoduce a new language.
+          I thought it appropriate to introduce myself, so Hello world, my name is Thomas.
+        </p>
+        <hr>
+        <p class='card__paragraph'>
+          I am a student of tha Lambda Academy of Computer Science.
+          I have been focusing on the development of full stack applications utilizing React and Node for front-end and server-side, respectively.
+          While atending Lambda I have developed and assisted in the development of several applications, the most enterprizing being an unnamed Tour Application.
+          Outside of the Academy I experiment with game development and font design.
+        </p>
+        <hr>
+        <p class='card__paragraph'>
+          If you have further questions, please contact me.
+        </p>
+      </div>
+      <div class='card education__card'>
+        <h2 class="card__title">Education</h2>
+      </div>
     </section>
     <section id='my-work' class='my-work'>
       <h2 class='my-work__title'>My Work</h2>
@@ -57,25 +69,25 @@
     <section id='dev-tools'>
       <h2 class='dev-tools__title'>Dev Tools</h2>
       <a class="icon__link" href="https://getbootstrap.com/" target="_blank">
-        <img class="icon test" src="images/logos/bootstrap-name.svg" alt="Bootstrap logo" />
+        <img class="icon button" src="images/logos/bootstrap-name.svg" alt="Bootstrap logo" />
       </a>
       <a class="icon__link" href="https://redux.js.org/" target="_blank">
-        <img class="icon test" src="images/logos/redux-name.svg" alt="Redux logo" />
+        <img class="icon button" src="images/logos/redux-name.svg" alt="Redux logo" />
       </a>
       <a class="icon__link" href="https://reactjs.com/" target="_blank">
-        <img class="icon test" src="images/logos/react-name.svg" alt="React logo" />
+        <img class="icon button" src="images/logos/react-name.svg" alt="React logo" />
       </a>
       <a class="icon__link" href="https://mongodb.com/" target="_blank">
-        <img class="icon test" src="images/logos/mongo-name.svg" alt="MongoDB Logo" />
+        <img class="icon button" src="images/logos/mongo-name.svg" alt="MongoDB Logo" />
       </a>
       <a class="icon__link" href="https://wordpress.org/" target="_blank">
-        <img class="icon test" src="images/logos/wordpress-name.svg" alt="WordPress Logo" />
+        <img class="icon button" src="images/logos/wordpress-name.svg" alt="WordPress Logo" />
       </a>
       <a class="icon__link" href="https://nodejs.org/en/" target="_blank">
-        <img class="icon test" src="images/logos/node.svg" alt="node logo" />
+        <img class="icon button" src="images/logos/node.svg" alt="node logo" />
       </a>
       <a class="icon__link" href="https://expressjs.com/" target="_blank">
-        <img class="icon test" src="images/logos/express-name.svg" alt="express logo" />
+        <img class="icon button" src="images/logos/express-name.svg" alt="express logo" />
       </a>
       <img class="icon" src="images/logos/Javascript.svg" alt="JavaScript Logo" />
       <img class="icon" src="images/logos/html5.svg" alt="html5 logo" />

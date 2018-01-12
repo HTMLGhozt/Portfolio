@@ -1,0 +1,38 @@
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--matte-black);
+  counter-reset: level1;
+}
+/* Code Header colors */
+.javascript {
+  font-family: "Lucida Console", Monaco, monospace;
+  color: var(--trim-red);
+  line-height: 1.3em;
+  font-size: 2em;
+  padding-left: 0;
+  list-style-type: none;
+  border-left: 2px solid var(--trim-dimgray);
+}
+.javascript > li:before {
+  content: counter(level1);
+  counter-increment: level1;
+  position: relative;
+  left: -40px;
+  color: var(--trim-dimgray);
+}
+
+.javascript__symbol { color: var(--trim-gray); }
+.javascript__global { color: var(--trim-cyan); }
+.javascript__declaration { color: var(--trim-green); }
+.javascript__text {
+  color: var(--trim-yellow);
+  text-decoration: none;
+  transition: all 1s ease;
+}
+.javascript:hover .javascript__text {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}

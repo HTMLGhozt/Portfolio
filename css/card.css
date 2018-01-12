@@ -1,0 +1,37 @@
+/* generic card */
+.card {
+  background: white;
+  position: relative;
+  padding: 5px 10px;
+  outline: 10px solid var(--matte-black);
+}
+.card__title {
+  position: absolute;
+  top: -60px;
+  left: 0
+}
+.card__paragraph {
+  font-size: 16px;
+  font-family: var(--font-sans-serif);
+  margin: 0 0 10px 0;
+}
+/* defined */
+.bio__card {
+  max-width: 600px;
+  width: 50%;
+  text-align: justify;
+  margin: 100px 0 0 20px;
+}
+.education__card {
+  min-width: 20vw;
+  min-height: 70vh; 
+  margin-top: 160px;
+}
+.background-stripe {
+  height: 350px;
+  width: 100%;
+  background: var(--trim-red);
+  position: absolute;
+  top: 75px;
+  z-index: -1;
+}
